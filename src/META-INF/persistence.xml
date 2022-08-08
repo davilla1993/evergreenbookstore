@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+  <persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd" version="2.1">
+          
+          <persistence-unit name="bookstore">
+          		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+          	<properties>
+          	
+          	<property name = "javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/bookstore" />
+               <property name = "javax.persistence.jdbc.user" value="root" />
+               <property name = "javax.persistence.jdbc.password" value="toor" />
+               <property name = "javax.persistence.jdbc.driver" value ="com.mysql.jdbc.Driver" />
+               
+           <!--   <property name = "javax.persistence.jdbc.url" value="jdbc:mysql://us-cdbr-east-06.cleardb.net/heroku_03ee648e7239c63?autoReconnect=true"/> 
+               <property name = "javax.persistence.jdbc.user" value="b2abd4d138dbfd" />
+               <property name = "javax.persistence.jdbc.password" value="247cdc2e" />
+               <property name = "javax.persistence.jdbc.driver" value ="com.mysql.jdbc.Driver" />
+ -->                   
+          	  <property name="hibernate.c3p0.min_size" value="0"/>
+				<property name="hibernate.c3p0.max_size" value="20"/>
+				<property name="hibernate.c3p0.timeout" value="500"/>
+				<property name="hibernate.c3p0.max_statements" value="50"/>
+				<property name="hibernate.c3p0.idle_test_period" value="3000"/>
+				<property name="hibernate.c3p0.testConnectionOnCheckout" value="true"/>
+				<property name="hibernate.c3p0.acquire_increment" value="1"/>
+
+          		
+          	
+          	</properties>
+          </persistence-unit>
+      </persistence>

@@ -1,0 +1,139 @@
+@CHARSET "ISO-8859-1";
+
+#headermenu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu_item {
+	margin: 0 20px;
+	text-align: center;
+}
+
+#headermenu .menu_item a {
+	text-decoration: none;
+	font-size: 25px;
+
+}
+
+a:link{
+	color: cornflowerBlue;
+	text-decoration: none;
+}
+
+a:visited {
+	color: indigo;
+}
+
+a:hover {
+	color: blue;
+	text-decoration: underline;
+}
+
+a:active {
+	color: red;
+}
+
+#headermenu a:link {
+	font-size: larger;
+}
+
+.pageheading {
+	color: darkBlue;
+}
+
+table {
+	
+	width: 80%;
+	border: 0;
+	border-collapse: collapse;	
+	align: center;
+	
+}
+
+th, td {
+	padding: 8px;
+}
+
+th {
+	background: darkblue;
+	color: cornsilk;
+	font-size: large;
+}
+
+
+.image{
+	width: 250px;
+	height: 300px;
+}
+
+button {
+	border: 0;
+	font-size: 10px;
+	line-height: 1;
+	padding: 16px 30px;
+	border-radius: 30px;
+	color: white;
+	background: green;
+}
+
+button:hover {
+	cursor: pointer;
+	background: #71DFE7;
+	
+}
+
+button:active{
+	transform: translate(-3%, 2%);
+}
+
+.center {
+	display: flex;
+	justify-content:center;
+}
+
+
+div.book {
+	display: inline-block;
+	margin:20px;
+	text-align:center;
+}
+
+.btn-center, h3 {
+	text-align:center;
+}
+
+.top {
+	vertical-align: top;
+}
+
+.left{
+	text-align:left;
+}
+
+.justify {
+	text-lign: justify;
+}
+
+#book-title {
+	font-size: x-large;
+	font-weight: bold;
+}
+
+#author{
+	font-size: large;
+	font-style:italic;
+}
+
+#description{
+	text-align: justify;
+	vertial-align: top;
+}
+
+#price {
+	vertical-align: top;
+	width: 20%;
+	
+}
+
