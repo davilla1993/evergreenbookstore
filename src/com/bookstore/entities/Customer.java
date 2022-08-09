@@ -21,7 +21,7 @@ import javax.persistence.Transient;
 import javax.persistence.UniqueConstraint;
 
 @Entity
-@Table(name = "customer", catalog="new_version", uniqueConstraints = @UniqueConstraint(columnNames = "email"))
+@Table(name = "customer", catalog="heroku_03ee648e7239c63", uniqueConstraints = @UniqueConstraint(columnNames = "email"))
 @NamedQueries({
 	@NamedQuery(name="Customer.findAll", query="SELECT c FROM Customer c ORDER BY c.registerDate DESC"),
 	@NamedQuery(name="Customer.countAll", query="SELECT COUNT(c.customerId) FROM Customer c"),
