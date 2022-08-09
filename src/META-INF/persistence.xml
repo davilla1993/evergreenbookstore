@@ -15,7 +15,7 @@
                
              <property name = "javax.persistence.jdbc.url" value="jdbc:mysql://us-cdbr-east-06.cleardb.net/heroku_2a5b9d0aba91f5e?reconnect=true"/> 
                <property name = "javax.persistence.jdbc.user" value="b5e690e9b98aec" />
-               <property name = "javax.persistence.jdbc.password" value="f6089cc323a395e" />
+               <property name = "javax.persistence.jdbc.password" value="b8178748" />
                <property name = "javax.persistence.jdbc.driver" value ="com.mysql.cj.jdbc.Driver" />
                    
           	    <property name="hibernate.c3p0.min_size" value="0"/>
