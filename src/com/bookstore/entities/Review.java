@@ -22,7 +22,7 @@ import javax.persistence.Transient;
 @NamedQueries({
 	@NamedQuery(name="Review.listAll", query="SELECT r FROM Review r ORDER BY r.reviewTime DESC"),
 	@NamedQuery(name="Review.countAll", query="SELECT COUNT(r) FROM Review r"),
-	@NamedQuery(name="Review.findByCustomerAndBook", query="SELECT r FROM Review r WHERE r.customer.customerId =:customerId AND r.book.bookId =:bookId"),
+	@NamedQuery(name="Review.findByCustomerAndBook", query="SELECT r FROM Review r WHERE r.customer.customerId=:customerId AND r.book.bookId=:bookId"),
 	@NamedQuery(name="Review.mostFavouredBooks", query="SELECT r.book, COUNT(r.book.bookId) AS ReviewCount, AVG(r.rating) AS AvgRating FROM Review r GROUP BY"
 			+ " r.book.bookId HAVING AVG(r.rating) >= 4.0 ORDER BY ReviewCount DESC, AvgRating DESC")
 

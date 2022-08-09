@@ -25,8 +25,8 @@ import javax.persistence.UniqueConstraint;
 @NamedQueries({
 	@NamedQuery(name="Customer.findAll", query="SELECT c FROM Customer c ORDER BY c.registerDate DESC"),
 	@NamedQuery(name="Customer.countAll", query="SELECT COUNT(c.customerId) FROM Customer c"),
-	@NamedQuery(name="Customer.findByEmail", query="SELECT c FROM Customer c WHERE c.email =:email"),
-	@NamedQuery(name="Customer.checkLogin", query="SELECT c FROM Customer c WHERE c.email = :email AND c.password = :password")
+	@NamedQuery(name="Customer.findByEmail", query="SELECT c FROM Customer c WHERE c.email=:email"),
+	@NamedQuery(name="Customer.checkLogin", query="SELECT c FROM Customer c WHERE c.email=:email AND c.password=:password")
 })
 public class Customer implements java.io.Serializable {
 
@@ -109,7 +109,6 @@ public class Customer implements java.io.Serializable {
 
 	@Id
 	@GeneratedValue(strategy = IDENTITY)
-
 	@Column(name = "customer_id", unique = true, nullable = false)
 	public Integer getCustomerId() {
 		return this.customerId;
