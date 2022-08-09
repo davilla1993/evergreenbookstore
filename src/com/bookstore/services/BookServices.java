@@ -137,7 +137,7 @@ public class BookServices {
 	public void editBook() throws ServletException, IOException {
 		Integer bookId = Integer.parseInt(request.getParameter("id"));
 
-		Book existBook = bookDao.get(bookId);
+//		Book existBook = bookDao.get(bookId);
 		
 		Book book = bookDao.get(bookId);
 		List<Category> listCategory = categoryDao.listAll();
