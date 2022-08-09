@@ -20,7 +20,7 @@
                    
           	  <property name="hibernate.c3p0.min_size" value="0"/>
 				<property name="hibernate.c3p0.max_size" value="20"/>
-				<property name="hibernate.c3p0.timeout" value="500"/>
+				<property name="hibernate.c3p0.timeout" value="5000"/>
 				<property name="hibernate.c3p0.max_statements" value="50"/>
 				<property name="hibernate.c3p0.idle_test_period" value="3000"/>
 				<property name="hibernate.c3p0.testConnectionOnCheckout" value="true"/>
