@@ -18,7 +18,7 @@ import javax.persistence.Table;
 	@NamedQuery(name="Users.countAll", query="SELECT COUNT(*) FROM Users u"),
 	@NamedQuery(name="Users.checkLogin", query="SELECT u FROM Users u WHERE u.email=:email AND u.password=:password")
 })
-@Table(name = "users")
+@Table(name = "users", catalog="heroku_2a5b9d0aba91f5e")
 public class Users implements java.io.Serializable {
 
 	private static final long serialVersionUID = -8485651461936473734L;
