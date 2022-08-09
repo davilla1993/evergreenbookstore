@@ -21,7 +21,7 @@ import javax.persistence.Transient;
 import javax.persistence.UniqueConstraint;
 
 @Entity
-@Table(name = "customer", uniqueConstraints = @UniqueConstraint(columnNames = "email"))
+@Table(name = "customer", catalog="new_version", uniqueConstraints = @UniqueConstraint(columnNames = "email"))
 @NamedQueries({
 	@NamedQuery(name="Customer.findAll", query="SELECT c FROM Customer c ORDER BY c.registerDate DESC"),
 	@NamedQuery(name="Customer.countAll", query="SELECT COUNT(c.customerId) FROM Customer c"),
@@ -152,7 +152,7 @@ public class Customer implements java.io.Serializable {
 		return this.firstname + " " + this.lastname;
 	}
 
-	@Column(name = "address_line_1", nullable = false, length = 128)
+	@Column(name = "address_line1", nullable = false, length = 128)
 	public String getAddressLine1() {
 		return this.addressLine1;
 	}
