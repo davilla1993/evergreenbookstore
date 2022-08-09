@@ -26,12 +26,12 @@ public class HomeServlet extends HttpServlet {
 		
 		BookDao bookDao = new BookDao();
 		
-/*		List<Book> listNewBooks = bookDao.listNewBooks();
-*/		List<Book> listBestSellingBooks = bookDao.listBestSellingBooks();
+		List<Book> listNewBooks = bookDao.listNewBooks();
+		List<Book> listBestSellingBooks = bookDao.listBestSellingBooks();
 		List<Book> listFavouredBooks = bookDao.listMostFavouredBooks();
 		
-/*		request.setAttribute("listNewBooks", listNewBooks);
-*/		request.setAttribute("listBestSellingBooks", listBestSellingBooks);
+		request.setAttribute("listNewBooks", listNewBooks);
+		request.setAttribute("listBestSellingBooks", listBestSellingBooks);
 		request.setAttribute("listFavouredBooks", listFavouredBooks);
 
 		

@@ -152,7 +152,7 @@ public class Customer implements java.io.Serializable {
 		return this.firstname + " " + this.lastname;
 	}
 
-	@Column(name = "address_line1", nullable = false, length = 128)
+	@Column(name = "address_line_1", nullable = false, length = 128)
 	public String getAddressLine1() {
 		return this.addressLine1;
 	}
