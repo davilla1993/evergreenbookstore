@@ -43,7 +43,6 @@ public class Category implements java.io.Serializable {
 
 	@Id
 	@GeneratedValue(strategy = IDENTITY)
-
 	@Column(name = "category_id", unique = true, nullable = false)
 	public Integer getCategoryId() {
 		return this.categoryId;
