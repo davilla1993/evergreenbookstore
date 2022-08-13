@@ -18,7 +18,7 @@ import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 
 @Entity
-@Table(name = "review")
+@Table(name = "review", catalog = "heroku_9d3060dd940f04b")
 @NamedQueries({
 	@NamedQuery(name="Review.listAll", query="SELECT r FROM Review r ORDER BY r.reviewTime DESC"),
 	@NamedQuery(name="Review.countAll", query="SELECT COUNT(r) FROM Review r"),

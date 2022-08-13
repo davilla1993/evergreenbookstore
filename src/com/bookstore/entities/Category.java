@@ -15,7 +15,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "category")
+@Table(name = "category", catalog = "heroku_9d3060dd940f04b")
 @NamedQueries({
 	@NamedQuery(name = "Category.findAll", query= "SELECT c FROM Category c ORDER BY c.categoryId"),
 	@NamedQuery(name = "Category.countAll", query = "SELECT COUNT(*) FROM Category"),
