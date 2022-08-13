@@ -13,21 +13,18 @@
                <property name = "javax.persistence.jdbc.password" value="toor" />
                <property name = "javax.persistence.jdbc.driver" value ="com.mysql.jdbc.Driver" /> -->
                
-             <!-- <property name = "javax.persistence.jdbc.url" value="jdbc:mysql://us-cdbr-east-06.cleardb.net/heroku_2a5b9d0aba91f5e?reconnect=true"/> 
-               <property name = "javax.persistence.jdbc.user" value="b5e690e9b98aec" />
-               <property name = "javax.persistence.jdbc.password" value="b8178748" />
+             <property name = "javax.persistence.jdbc.url" value="jdbc:mysql://us-cdbr-east-06.cleardb.net/heroku_9d3060dd940f04b?reconnect=true"/> 
+               <property name = "javax.persistence.jdbc.user" value="ba036bb435f425" />
+               <property name = "javax.persistence.jdbc.password" value="19fe6c75" />
                <property name = "javax.persistence.jdbc.driver" value ="com.mysql.cj.jdbc.Driver" />
- -->                   
+                   
           	    <property name="hibernate.c3p0.min_size" value="0"/>
 				<property name="hibernate.c3p0.max_size" value="20"/>
 				<property name="hibernate.c3p0.timeout" value="500"/>
 				<property name="hibernate.c3p0.max_statements" value="50"/>
 				<property name="hibernate.c3p0.idle_test_period" value="300"/>
 				<property name="hibernate.c3p0.testConnectionOnCheckout" value="true"/>
-				<property name="hibernate.c3p0.acquire_increment" value="1"/> 
-
-          		
-          	
+				<property name="hibernate.c3p0.acquire_increment" value="1"/>           	
           	</properties>
           </persistence-unit>
       </persistence>
