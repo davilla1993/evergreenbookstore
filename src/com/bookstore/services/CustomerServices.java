@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.bookstore.controllers.frontend.HomeServlet;
 import com.bookstore.dao.CustomerDao;
 import com.bookstore.entities.Customer;
 import com.bookstore.security.HashGenerationException;
@@ -241,10 +242,13 @@ public class CustomerServices {
 	}
 
 
-	public void logout() throws IOException {
+	public void logout() throws IOException, ServletException {
 		request.getSession().removeAttribute("loggedCustomer");
 		
 		response.sendRedirect(request.getContextPath());
+		
+		
+			
 	}
 
 	public void showCustomerProfile() throws ServletException, IOException {

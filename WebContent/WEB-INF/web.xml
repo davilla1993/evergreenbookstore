@@ -3,16 +3,16 @@
  xmlns="http://java.sun.com/xml/ns/javaee" 
  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
-  <display-name>evergreen</display-name>
+  <display-name>evergreenbooks</display-name>
   
- <!--  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
+<!--  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
   
   <servlet>
     <description></description>
     <servlet-name>HomeServlet</servlet-name>
-    <servlet-class>com.bookstore.controller.frontend.HomeServlet</servlet-class>
+    <servlet-class>com.bookstore.controllers.frontend.HomeServlet</servlet-class>
   </servlet>
   
   <servlet-mapping>
