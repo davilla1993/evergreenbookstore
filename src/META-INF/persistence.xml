@@ -8,9 +8,9 @@
           		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
           	<properties>
           	
-          	 <property name = "javax.persistence.jdbc.url" value="jdbc:mysql://31.220.21.123:3306/bookstore" />
-               <property name = "javax.persistence.jdbc.user" value="root" />
-               <property name = "javax.persistence.jdbc.password" value="2022@Toor" />
+          	 <property name = "javax.persistence.jdbc.url" value="${DB_URL}"/>
+               <property name = "javax.persistence.jdbc.user" value="${DB_USER}" />
+               <property name = "javax.persistence.jdbc.password" value="${DB_PASSWORD}" />
                <property name = "javax.persistence.jdbc.driver" value ="com.mysql.jdbc.Driver" /> 
                            
           	    <property name="hibernate.c3p0.min_size" value="0"/>
